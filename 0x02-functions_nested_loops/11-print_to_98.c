@@ -1,12 +1,43 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- * print_to_98 - prints numbers from n to 98
- * @n: is the number
+ *  print_to_98 - prints numbers from n to 98
+ *  @n: number strat prinitng from
+ *  Return: always 0
  */
 void print_to_98(int n)
 {
-	for (n = 0; n <= 98; n++)
+	if (n <= 98)
 	{
-		_putchar('%d, ', n);
+		for (; n <= 98; n++)
+		{
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf('\n');
+				break;
+			}
+			else
+			{
+				printf("%d, ", n);
+			}
+		}
+	}
+	else
+	{
+		for (; n >= 98; n--)
+		{
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d, ", n);
+		}
+		}
 	}
 }

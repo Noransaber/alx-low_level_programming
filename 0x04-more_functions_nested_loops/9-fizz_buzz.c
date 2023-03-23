@@ -1,9 +1,8 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
  * main - print Fizz Buzz programm
- * Return: void
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -34,6 +33,5 @@ int main(void)
 	}
 	}
 	printf("\n");
-
 	return (0);
 }

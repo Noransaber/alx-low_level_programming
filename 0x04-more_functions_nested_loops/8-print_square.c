@@ -9,6 +9,7 @@
 void print_square(int size)
 {
 	int x, y;
+
 	x = 0;
 
 	if (size <= 0)
@@ -17,7 +18,7 @@ void print_square(int size)
 	}
 	else
 	{
-	for (;x < size; x++)
+	for (; x < size; x++)
 	{
 	for (y = 0; y < size; y++)
 	{

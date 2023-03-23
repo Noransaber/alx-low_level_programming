@@ -8,9 +8,7 @@
 
 void print_line(int n)
 {
-	int i;
-
-	if (n <= 0)
+	if (n == 0)
 	{
 	_putchar('\n');
 	}
@@ -18,13 +16,23 @@ void print_line(int n)
 	{
 	_putchar(95);
 	_putchar(95);
+	_putchar('\n');
 	}
 	else if (n == 10)
 	{
-	for (i = 0; i <= 10; i++)
-	{
 	_putchar(95);
+        _putchar(95);
+	_putchar(95);
+        _putchar(95);
+	_putchar(95);
+        _putchar(95);
+	_putchar(95);
+        _putchar(95);
+	_putchar(95);
+        _putchar(95);
 	}
-	}
+	else if (n < 0)
+	{
 	_putchar('\n');
+	}
 }

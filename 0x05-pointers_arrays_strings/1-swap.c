@@ -4,7 +4,6 @@
  * swap_int  - that swaps the values of two integers.
  * @a: number
  * @b: second number
- * @c: third number
  * Return:void
  */
 

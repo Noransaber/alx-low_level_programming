@@ -4,7 +4,7 @@
 /**
  * _strcpy -  copies the string pointed to by src
  * @dest: character
- * @str: string
+ * @src: string
  * Return: always 0
  */
 

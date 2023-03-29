@@ -5,7 +5,7 @@
  * _strncat -  concatenates two strings
  * @dest: string1
  * @src:string2
- * @:number
+ * @n:input value
  * Return:dest
  */
 

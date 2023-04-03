@@ -3,15 +3,15 @@
 
 /**
  * _strspn -  gets the length of a prefix substring.
- * s@string or segmant
+ *@s:string or segmant
  * @accept: bytes
- * Retrun: s
+ * Return: (dest)
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
 	int dest;
 
-	dest = strspn(accept, s);
+	dest = strspn(s, accept);
 	return (dest);
 }

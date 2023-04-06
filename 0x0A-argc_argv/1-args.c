@@ -4,7 +4,7 @@
 
 /**
  * main - prints num of args
- * @agrc: count the num of args
+ * @argc: count the num of args
  * @argv: array of args
  * Return: Always 0
  */

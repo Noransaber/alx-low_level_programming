@@ -3,7 +3,7 @@
 
 /**
  * main - prints its name
- * @agrc: prints the count
+ * @argc: prints the count
  * @argv: array of args
  * Return: always 0
  */

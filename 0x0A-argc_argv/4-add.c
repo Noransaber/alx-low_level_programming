@@ -3,8 +3,8 @@
 	#include <ctype.h>
 	#include <string.h>
 	/**
-	 * check_num - check - string there are digit
-	 * @str: array str
+	 * check_num - check - string
+	 * @str: array
 	 *
 	 * Return: Always 0 (Success)
 	 */

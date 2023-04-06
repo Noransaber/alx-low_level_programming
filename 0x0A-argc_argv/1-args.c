@@ -5,7 +5,8 @@
 /**
  * main - prints num of args
  * @agrc: count the num of args
- * @argv: array of arfs
+ * @argv: array of args
+ * Return: Always 0
  */
 
 int main(int argc, char* argv[])

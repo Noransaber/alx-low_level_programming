@@ -2,24 +2,23 @@
 	#include <stdlib.h>
 	#include <ctype.h>
 	#include <string.h>
-	/**
-	 * check_num - check - string
-	 * @str: array
-	 *
-	 * Return: Always 0 (Success)
-	 */
+/**
+* check_num - check str
+* @str: array
+*
+* Return: Always 0 (Success)
+*/
 	int check_num(char *str)
 	{
-		/*Declaring variables*/
 		unsigned int count;
 
 
 		count = 0;
-		while (count < strlen(str)) /*count string*/
+		while (count < strlen(str))
 
 
 		{
-			if (!isdigit(str[count])) /*check if str there are digit*/
+			if (!isdigit(str[count]))
 			{
 				return (0);
 			}
@@ -31,13 +30,13 @@
 	}
 
 
-	/**
-	 * main - Print the name of the program
-	 * @argc: Count arguments
-	 * @argv: Arguments
-	 *
-	 * Return: Always 0 (Success)
-	 */
+/**
+* main - Print the name of the program
+* @argc: Count arguments
+* @argv: Arguments
+*
+* Return: Always 0 (Success)
+*/
 
 
 	int main(int argc, char *argv[])
@@ -46,20 +45,19 @@
 	{
 
 
-		/*Declaring variables*/
 		int count;
 		int str_to_int;
 		int sum = 0;
 
 
 		count = 1;
-		while (count < argc) /*Goes through the whole array*/
+		while (count < argc)
 		{
 			if (check_num(argv[count]))
 
 
 			{
-				str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
+				str_to_int = atoi(argv[count]);
 				sum += str_to_int;
 			}
 
@@ -76,7 +74,7 @@
 		}
 
 
-		printf("%d\n", sum); /*print sum*/
+		printf("%d\n", sum);
 
 
 		return (0);

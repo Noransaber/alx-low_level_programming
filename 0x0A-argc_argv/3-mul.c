@@ -12,6 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int i, multi;
+
 	multi = 1;
 
 	if (argc < 2)

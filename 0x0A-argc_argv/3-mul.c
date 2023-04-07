@@ -9,7 +9,7 @@
  * Return: Always 0
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int i, multi;
 	multi = 1;

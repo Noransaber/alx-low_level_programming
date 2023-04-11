@@ -11,8 +11,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char *concat_str;
-	size_t len1, len2, total_len, i, j;
+	char *con_str;
+	size_t len1, len2, t_len, i, j;
 
 	len1 = 0;
 	len2 = 0;
@@ -26,38 +26,32 @@ char *str_concat(char *s1, char *s2)
 	{
 	s2 = "";
 	}
-
-	/* Get the len of the first and sec str*/
+	/* Get the len of them*/
 	while (s1[len1] != '\0')
 	{
 	len1++;
 	}
-
 	while (s2[len2] != '\0')
 	{
 	len2++;
 	}
-	/* addition of 2 len*/
-	total_len = len1 + len2 + 1;
+	/* addition the lens*/
+	t_len = len1 + len2 + 1;
 	/* start new mem for concat_str*/
-	concat_str = (char *) malloc(total_len * sizeof(char));
-
+	con_str = (char *) malloc(t_len * sizeof(char));
 	/* checking if it successed*/
-	if (concat_str == NULL)
+	if (con_str == NULL)
 	{
 	return (NULL);
 	}
-	/* cp the first str*/
 	for (i = 0; i < len1; i++)
 	{
-	concat_str[i] = s1[i];
+	con_str[i] = s1[i];
 	}
-	/* cp the sec one*/
 	for (j = 0; j < len2; j++)
 	{
-	concat_str[len1 + j] = s2[j];
+	con_str[len1 + j] = s2[j];
 	}
-	/* adding null*/
-	concat_str[total_len - 1] = '\0';
-	return (concat_str);
+	con_str[t_len - 1] = '\0';
+	return (con_str);
 }

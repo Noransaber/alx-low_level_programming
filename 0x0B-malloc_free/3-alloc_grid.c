@@ -17,7 +17,7 @@ int **alloc_grid(int width, int height)
 	{
 	return (NULL);
 	}
-	grid = (int **)malloc(height * sizeof(int));
+	grid = (int **)malloc(height * sizeof(int *));
 	if (grid == NULL)
 	{
 	return (NULL);
@@ -36,9 +36,9 @@ int **alloc_grid(int width, int height)
 	}
 	/* Initialize all elements of the 2D array to 0*/
 	for (j = 0; j < width; j++)
-	{
-	grid[i][j] = 0;
-	}
-	}
-	return (grid);
-}
+        {
+        grid[i][j] = 0;
+        }
+        }
+        return (grid);
+}	

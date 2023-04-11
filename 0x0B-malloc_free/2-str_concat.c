@@ -17,7 +17,6 @@ char *str_concat(char *s1, char *s2)
 	len1 = 0;
 	len2 = 0;
 
-	/* checking if str is NULL*/
 	if (s1 == NULL)
 	{
 	s1 = "";
@@ -26,7 +25,6 @@ char *str_concat(char *s1, char *s2)
 	{
 	s2 = "";
 	}
-	/* Get the len of them*/
 	while (s1[len1] != '\0')
 	{
 	len1++;
@@ -35,11 +33,8 @@ char *str_concat(char *s1, char *s2)
 	{
 	len2++;
 	}
-	/* addition the lens*/
 	t_len = len1 + len2 + 1;
-	/* start new mem for concat_str*/
 	con_str = (char *) malloc(t_len * sizeof(char));
-	/* checking if it successed*/
 	if (con_str == NULL)
 	{
 	return (NULL);

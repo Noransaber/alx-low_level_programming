@@ -1,5 +1,6 @@
 #include <stdio.h>
-	#include "3-calc.h"
+#include "3-calc.h"
+#include <stdlib.h>
 /**
 * main - Prints the result.
 * @argc: The number of args given to the program.

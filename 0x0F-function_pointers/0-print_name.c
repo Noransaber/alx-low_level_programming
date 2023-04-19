@@ -1,6 +1,8 @@
 
 #include "function_pointers.h"
 #include <stdio.h>
+#ifndef PRINT_NAME_C
+#define PRINT_NAME_C
 /**
 * print_name - print name using pointer to function
 * @name: string to be added
@@ -15,4 +17,4 @@
 
 		f(name);
 	}
-
+#endif

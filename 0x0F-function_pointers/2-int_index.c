@@ -3,7 +3,7 @@
 * int_index - return index place if comparison = true, else -1
 * @array: arr
 * @size: size of arr
-* @cmp: ptr to func of one of the 3 
+* @cmp: ptr to func of one of the 3
 * Return: 0
 */
 int int_index(int *array, int size, int (*cmp)(int))

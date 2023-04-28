@@ -2,7 +2,8 @@
 
 void beforeMain(void)__attribute__((constructor));
 /**
- * beforeMain _ pribt statment before main to run
+ * beforeMain _ print statment before main to run
+ * function is excuted
  * Return:void
  */
 void beforeMain(void)

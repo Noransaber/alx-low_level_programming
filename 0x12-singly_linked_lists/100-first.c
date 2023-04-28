@@ -2,10 +2,10 @@
 
 void beforeMain(void)__attribute__((constructor));
 /**
- * beforeMain _ print statment before main to run
- * function is excuted
- * Return:void
+ * beforeMain - prints a sentence before the main
+ * function is executed
  */
+
 void beforeMain(void)
 {
 printf("You're beat! and yet, you must allow,\n");

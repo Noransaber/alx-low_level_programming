@@ -11,7 +11,7 @@
 
 void free_listint(listint_t *head)
 {
-struct listint_s *helper = head; /*init another pointer and it's equal head*/
+listint_t *helper = head; /*init another pointer and it's equal head*/
 
 while (helper != NULL)/*loop for traversing over the list*/
 {

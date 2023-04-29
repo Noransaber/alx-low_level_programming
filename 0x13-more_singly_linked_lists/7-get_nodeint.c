@@ -10,7 +10,7 @@
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 unsigned int i;
-struct listint_s *current = head;/*init ptr to head*/
+listint_t *current = head;/*init ptr to head*/
 
 for (i = 0; i < index && current != NULL; i++)/*traversing throught the list*/
 {

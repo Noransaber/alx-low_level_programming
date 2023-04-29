@@ -13,9 +13,9 @@
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 /*init ptr to point to node before the target one*/
-struct listint_s *previous = *head;
+listint_t *previous = *head;
 /*init ptr to poin to the node will be deleted*/
-struct listint_s *current = *head;
+listint_t *current = *head;
 /*init ptr to poin to the node will be deleted*/
 if (*head == NULL || head == NULL)
 return (-1);

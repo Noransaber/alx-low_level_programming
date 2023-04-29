@@ -13,7 +13,7 @@
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-struct listint_t *pre_node, *new_node; /*create new node */
+struct listint_s *pre_node, *new_node; /*create new node */
 
 pre_node = *head; /*ptr to point on the head*/
 /*allocate new memo for the new node*/

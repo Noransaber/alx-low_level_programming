@@ -14,7 +14,8 @@ size_t counter = 0; /*init our counter to count the num of elem in node*/
 const struct listint_s *ptr; /*create ptr */
 ptr = h; /*ptr to pint to the head*/
 
-while(ptr != NULL){ /*looping over the node with condi */
+while (ptr != NULL)
+{ /*looping over the node with condi */
 counter++;/*if it still true increase the counter*/
 ptr = ptr->next;/*move no the next node*/
 }

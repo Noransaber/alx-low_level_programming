@@ -9,7 +9,7 @@
 
 void free_listint2(listint_t **head)
 {
-struct  listint_s *current; /*init new pointer*/
+listint_t *current; /*init new pointer*/
 
 if (*head == NULL)
 { /*check if head NULL*/

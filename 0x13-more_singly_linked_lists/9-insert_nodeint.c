@@ -15,6 +15,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 listint_t *pre_node = *head;/*ptr to point on the head*/
 listint_t *new_node; /*create new node */
+unsigned int i;
 
 /*allocate new memo for the new node*/
 new_node = (listint_t *)malloc(sizeof(listint_t));
@@ -34,12 +35,15 @@ new_node->next = *head;
 return (new_node);
 }
 /*traversing the list to fin node before the insertion point*/
-idx--;
-while (idx != 0 && pre_node != NULL)
+for (i = 0; i < idx -1; i++)
 {
-pre_node = pre_node->next;
-idx--;
+if (pre_node == NULL)
+{
+	return (NULL);
 }
+pre_node = pre_node->next;
+}
+
 new_node->next = pre_node->next;
 pre_node->next = new_node;
 return (new_node);

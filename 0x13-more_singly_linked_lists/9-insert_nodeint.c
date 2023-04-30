@@ -35,7 +35,7 @@ return (new_node);
 }
 /*traversing the list to fin node before the insertion point*/
 idx--;
-while (idx != 0)
+while (idx != 0 && pre_node != NULL)
 {
 pre_node = pre_node->next;
 idx--;

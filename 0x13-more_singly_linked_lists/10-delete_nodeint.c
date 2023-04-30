@@ -12,8 +12,8 @@
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-/* Initialize pointers to track the previous 
-and current nodes, as well as a counter variable*/
+/* Initialize pointers to track the previous*/
+/*and current nodes, as well as a counter variable*/
 listint_t *previous = *head;
 listint_t *current = NULL;
 unsigned int j = 0;
@@ -30,7 +30,7 @@ return (1);
 /*Traverse the linked list to find the node to be deleted*/
 while (j < index - 1)
 {
-/* Check if we have reached the end of the linked list or the index is out of range*/
+/*Check if we have reached the end of the list or the indx is out of range*/
 if (!previous || !(previous->next))
 return (-1);
 previous = previous->next;/*Move the previous pointer to the next node*/

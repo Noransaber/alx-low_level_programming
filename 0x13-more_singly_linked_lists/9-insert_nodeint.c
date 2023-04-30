@@ -35,7 +35,7 @@ new_node->next = *head;
 return (new_node);
 }
 /*traversing the list to fin node before the insertion point*/
-for (i = 0; i < idx -1; i++)
+for (i = 0; i < idx - 1; i++)
 {
 if (pre_node == NULL)
 {

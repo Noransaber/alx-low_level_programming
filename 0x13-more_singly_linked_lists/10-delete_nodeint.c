@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * delete_nodeint_at_index - Deletes node at specified index in alist.
+ * delete_nodeint_at_index - removes node at certain idx in a list.
  * @head: A ptr to a ptr to the 1  node of the list.
  * @index: The index of the node to delete, starting from 0.
  *
@@ -12,36 +12,33 @@
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-/*init ptr to point to node before the target one*/
+/* Initialize pointers to track the previous 
+and current nodes, as well as a counter variable*/
 listint_t *previous = *head;
-/*init ptr to poin to the node will be deleted*/
-listint_t *current = *head;
-/*init ptr to poin to the node will be deleted*/
+listint_t *current = NULL;
+unsigned int j = 0;
+/*Check if the linked list is empty*/
 if (*head == NULL)
 return (-1);
-/*check if index = 0 we will delte the first node*/
+/*Check if we need to delete the first node*/
 if (index == 0)
 {
-current = *head;/*store ptr to first node*/
-*head = (*head)->next;/*update head to point to the sec node*/
-free(current);/*delet the first node*/
-current = NULL;
+*head = (*head)->next;/*Update the head pointer to the next node*/
+free(previous);/*Update the memory*/
 return (1);
 }
-previous = *head;/*update previous = to first node*/
-current = previous->next;/*update it to sec node*/
-/* Move the ptrs to the next nodes till we reach the node to be deleted */
-while (index != 1)
-{/*loop while index != 1*/
-previous = current;/*previous will track the current node*/
-current = current->next;/*current will move to the next node*/
-index--;/*decreament*/
-if (current == NULL)
+/*Traverse the linked list to find the node to be deleted*/
+while (j < index - 1)
+{
+/* Check if we have reached the end of the linked list or the index is out of range*/
+if (!previous || !(previous->next))
 return (-1);
+previous = previous->next;/*Move the previous pointer to the next node*/
+j++;
 }
-/*previous will point to the node next to current one*/
-previous->next = current->next;
-free(current);/*delte the node in specific index*/
-current = NULL;
+/* Update pointers to delete the node*/
+current = previous->next; /*Track the node to be deleted*/
+previous->next = current->next; /*Update the link of the previous node*/
+free(current);/* Free the memory of the node to be deleted*/
 return (1);
 }

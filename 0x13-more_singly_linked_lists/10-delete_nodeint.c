@@ -4,7 +4,7 @@
 
 /**
  * delete_nodeint_at_index - Deletes node at specified index in alist.
- * @head: A pointer to a pointer to the first node of the listint_t list.
+ * @head: A ptr to a ptr to the 1  node of the list.
  * @index: The index of the node to delete, starting from 0.
  *
  * Return: On success, 1. On failure, -1.
@@ -17,7 +17,7 @@ listint_t *previous = *head;
 /*init ptr to poin to the node will be deleted*/
 listint_t *current = *head;
 /*init ptr to poin to the node will be deleted*/
-if (*head == NULL || head == NULL)
+if (*head == NULL)
 return (-1);
 /*check if index = 0 we will delte the first node*/
 if (index == 0)

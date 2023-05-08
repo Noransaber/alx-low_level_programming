@@ -12,7 +12,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-char * store_var;
+char  *store_var;
 ssize_t fD;
 ssize_t write_var;
 ssize_t bytes_num;
@@ -23,9 +23,10 @@ if (fD == -1)
 return (0);
 
 /* init space in the memory for the store variable*/
-store_var = malloc(sizeof(char ) * letters);
+store_var = malloc(sizeof(char) * letters);
 bytes_num = read(fD, store_var, letters);
-/* Write the contents of the store_var 'buf' to STDOUT, and store the actual number of bytes written in 'write_var'*/
+/* Write the contents of the store_var 'buf' to STDOUT*/
+ /* and store the actual number of bytes written in 'write_var'*/
 write_var = write(STDOUT_FILENO, store_var, bytes_num);
 
 /*Free the memory allocated for the buffer*/

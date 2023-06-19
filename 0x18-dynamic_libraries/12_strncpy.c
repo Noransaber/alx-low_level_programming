@@ -1,31 +1,30 @@
 #include "main.h"
 /**
-* _strncat - join two strs
-* @dest: where i will store my result
-* @src: where i get my str
-* @n: len
-*
-* Return: dest
-*/
-char *_strncat(char *dest, char *src, int n)
+ * _strncpy - copy a string
+ * @dest: input value
+ * @src: input value
+ * @n: input value
+ *
+ * Return: dest
+ */
+char *_strncpy(char *dest, char *src, int n)
 {
-int a;
-int s;
+	int j;
 
 
-a = 0;
-while (dest[a] != '\0')
-{
-a++;
-}
-s = 0;
-while (s < n && src[s] != '\0')
-{
-dest[a] = src[s];
-a++;
-s++;
-}
-dest[a] = '\0';
-return (dest);
+	j = 0;
+	while (j < n && src[j] != '\0')
+	{
+		dest[j] = src[j];
+		j++;
+	}
+	while (j < n)
+	{
+		dest[j] = '\0';
+		j++;
+	}
+
+
+	return (dest);
 }
 

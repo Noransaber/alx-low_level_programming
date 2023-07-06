@@ -1,4 +1,3 @@
-#include "hash_tables.h"
 /**
  * hash_table_create - func to create the hash table
  * @size: it's the size of the table

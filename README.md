@@ -55,7 +55,7 @@ In the structures.md file, you'll learn about structures, a way to combine diffe
 C provides basic file handling capabilities to read from and write to files. The file_handling.md file explains how to perform file input and output operations in C.
 
 ### Dynamic Memory Allocation
-***The dynamic_memory_allocation.md file covers dynamic memory allocation in C using functions like malloc, calloc, and free. Dynamic memory allocation is essential for managing memory efficiently in certain situations.
+***The dynamic_memory_allocation.md file covers dynamic memory allocation in C using functions like malloc, calloc, and free. Dynamic memory allocation is essential for managing memory efficiently in certain situations.***
 
 ### Preprocessor Directives
 In the preprocessor_directives.md file, you'll understand preprocessor directives and how they can be used for conditional compilation and macro definitions.

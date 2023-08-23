@@ -1,0 +1,14 @@
+#compiler
+CC = gcc
+
+#source files
+SRC = main.c school.c
+
+#object files
+OBJ = main.o school.o
+
+#Output file
+NAME = school
+
+all: $(SRC) $(OBJ)
+	$(CC) $(SRC) -o $(NAME)

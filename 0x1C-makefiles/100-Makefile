@@ -1,26 +1,19 @@
-#Compiler
 CC = gcc
-#Source files
 SRC = main.c school.c
-#Objects files
 OBJ = $(SRC:.c=.o)
-#Output
 NAME = school
-#Removing command
-RM = rm
-#Flags
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-.PHONY: all clean fclean oclean re
+.PHONY: all clean oclean fclean re
 
 all: m.h $(OBJ)
-        $(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	$(RM) -f *~ $(NAME)
+	$(RM) *~ $(NAME)
 
 oclean:
-	$(RM) -f $(OBJ)
+	$(RM) $(OBJ)
 
 fclean: clean oclean
 

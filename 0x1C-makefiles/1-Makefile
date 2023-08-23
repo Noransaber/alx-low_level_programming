@@ -1,5 +1,7 @@
 CC := gcc
 SRC := main.c school.c
-all: $(SRC)
-	$(CC) $(SRC) -o school
+EXECUTABLE := school
+all : $(EXECUTABLE)
+EXECUTABLE: $(SRC)
+	$(CC) $(SRC) -o $(EXECUTABLE)
 

@@ -1,12 +1,12 @@
 #include "search_algos.h"
+
 /**
- * linear_search - searches for a value in an array of
- * integers using the Linear search algorithm
- * @array: ptr to the first ele of the array to search in
- * @size: size of the arr
- * @value: value to search in
- * Return: Always EXIT_SUCCESS
- **/
+ * linear_search - searching algorithm
+ * @array: Array to search in
+ * @size: number of eles in the array
+ * @value: value to search foe
+ * Return: the value or -1
+ */
 int linear_search(int *array, size_t size, int value)
 {
 	int i;
